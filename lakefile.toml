@@ -1,0 +1,18 @@
+name = "ProgrammingInLean"
+version = "0.1.0"
+defaultTargets = ["programminginlean"]
+
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = true
+# prevent confusing the AI with missing identifiers misidentified as implicit arguments
+relaxedAutoImplicit = false
+linter.missingDocs = true
+doc.verso = true
+
+[[lean_lib]]
+name = "ProgrammingInLean"
+
+[[lean_exe]]
+name = "programminginlean"
+root = "Main"
